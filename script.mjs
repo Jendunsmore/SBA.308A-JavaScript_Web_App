@@ -1,4 +1,8 @@
+
+
+
 // Fetch data from the Giphy API
+/*
 async function fetchGIFs() {
     try {
         const response = await fetch(
@@ -52,3 +56,4 @@ function displayGIFs(gifs) {
 window.onload = () => {
     fetchGIFs();
 };
+*/
