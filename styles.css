@@ -254,6 +254,41 @@ body {
     /*-----------------------------------*/
 
 
+
+    /* Style the GIFs */
+.gif-image {
+    width: 200px;
+    margin: 10px;
+    border: 2px solid #75108b;
+}
+
+/* Style the search bar */
+#searchForm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #75108b;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #75108b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff9b3e;
+}
+
+
     /* --------------------------------- */
     /* -------------Table--------------- */
     .table-container {
