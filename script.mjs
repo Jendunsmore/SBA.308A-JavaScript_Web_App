@@ -9,6 +9,7 @@ async function fetchGIFs() {
     } catch (error) {
         console.error('Error fetching the GIFs:', error);
     }
+    console.log(gifs)
 }
 
 // Fetch GIFs within search query
@@ -24,7 +25,7 @@ async function searchGIFs(query) {
     }
 }
 
-// Search form 
+// Search form
 document.getElementById('searchForm').addEventListener('submit', (e) => {
     e.preventDefault(); // Prevents form from refreshing page
     const query = document.getElementById('searchInput').value;

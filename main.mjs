@@ -1,5 +1,5 @@
-import { fetchGIFs, searchGIFs } from './api.js';
-import { displayGIFs } from './display.js';
+import { fetchGIFs, searchGIFs } from './api.mjs';
+import { displayGIFs } from './display.mjs';
 
 window.onload = async () => {
     const gifs = await fetchGIFs();

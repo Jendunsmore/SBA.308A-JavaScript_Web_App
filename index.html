@@ -3,10 +3,9 @@
 
 <head>
     <title>Spooky Little Developer's Monster Creations</title>
+    <script type="module" src="./main.mjs"></script> <!-- Importing main.mjs module -->
+    <script type="module" src="./display.js"></script> <!-- importing display.mjs module -->
     <link rel="stylesheet" href="styles.css">
-    <script defer type="text/javascript" src="api.mjs></script>
-    <script type="module" src="./script.mjs"></script>
-
     <div class="snowflakes">
         <div class="snowflake">
             <img src="https://media1.giphy.com/media/0xR7MUO0hJfWtco7C6/giphy.gif" />
@@ -38,7 +37,6 @@
         <div class="snowflake">
             <img src="https://media1.giphy.com/media/0xR7MUO0hJfWtco7C6/giphy.gif" />
         </div>
-    </div>
 </head>
 
 <body>
@@ -55,7 +53,7 @@
 
     <main>
         <h1>Spooky Little Developer's Monster Creations</h1>
-        <form id='searchForm'>
+        <form id='searchForm' action='#' method='get'>
             <input type='text' id='searchInput' placeholder='Search for spooky GIFs...' />
             <button type='submit'>Search</button>
         </form>
@@ -64,4 +62,7 @@
     <footer>
         Made with angst by a struggling bootcamp student
     </footer>
+
 </body>
+
+</html>
