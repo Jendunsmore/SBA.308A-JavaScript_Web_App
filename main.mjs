@@ -1,9 +1,14 @@
-import { fetchGIFs, searchGIFs } from './api.mjs';
+import { fetchGIFs, searchGIFs, fetchHalloweenGIFs } from './api.mjs';
 import { displayGIFs } from './display.mjs';
 
 window.onload = async () => {
-    const gifs = await fetchGIFs();
-    displayGIFs(gifs);
+    // Fetch and display Halloween GIFs on page load
+    const halloweenGIFs = await fetchHalloweenGIFs();
+    if (halloweenGIFs) {
+        displayGIFs(halloweenGIFs);
+    } else {
+        console.log('No Halloween GIFs to display');
+    }
 };
 
 document.getElementById('searchForm').addEventListener('submit', async (e) => {
